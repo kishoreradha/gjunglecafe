@@ -1,16 +1,347 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>G' Jungle Cafe</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:#f8f9fa;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(8px);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 50px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    color:white;
+}
+
+.logo img{
+    width:60px;
+    margin-right:10px;
+}
+
+.logo h2{
+    font-size:24px;
+}
+
+.hero{
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+
+.slides{
+    height:100%;
+    width:100%;
+}
+
+.slides img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    animation:fade 16s infinite;
+}
+
+.slides img:nth-child(1){animation-delay:0s;}
+.slides img:nth-child(2){animation-delay:4s;}
+.slides img:nth-child(3){animation-delay:8s;}
+.slides img:nth-child(4){animation-delay:12s;}
+
+@keyframes fade{
+    0%{opacity:0;}
+    8%{opacity:1;}
+    25%{opacity:1;}
+    33%{opacity:0;}
+    100%{opacity:0;}
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+}
+
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:white;
+    z-index:2;
+    width:90%;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:1.3rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    margin:10px;
+    text-decoration:none;
+    border-radius:8px;
+    color:white;
+    font-weight:bold;
+}
+
+.facebook{
+    background:#1877f2;
+}
+
+.call{
+    background:#2d6a4f;
+}
+
+section{
+    padding:80px 30px;
+}
+
+.offer{
+    background:#d4af37;
+    color:black;
+    text-align:center;
+    font-weight:bold;
+    font-size:22px;
+}
+
+.about{
+    text-align:center;
+    max-width:1000px;
+    margin:auto;
+}
+
+.about h2{
+    color:#1b4332;
+    margin-bottom:20px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:#1b4332;
+    margin-bottom:10px;
+}
+
+.contact{
+    background:#1b4332;
+    color:white;
+}
+
+.contact h2{
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.3rem;
+}
+
+.hero-content p{
+    font-size:1rem;
+}
+
+nav{
+    padding:10px 20px;
+}
+}
+
+</style>
 </head>
+
 <body>
 
-<h1>Welcome to G' Jungle Cafe</h1>
+<header>
+<nav>
 
-<p>Official website coming soon.</p>
+<div class="logo">
+">
+<h2>G' Jungle Cafe</h2>
+</div>
 
-<p>📞 Phone: Coming Soon</p>
-<p>📧 Email: Coming Soon</p>
+</nav>
+</header>
+
+
+<section class="hero">
+
+<div class="slides">
+.jpg">
+hero2.jpg
+hero3.jpg
+4.jpg">
+</div>
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>🌿 G' JUNGLE CAFE</h1>
+
+<p>
+Unlimited Samgyeopsal • Birthday Parties • Family Gatherings • Corporate Events
+</p>
+
+=100091445994719"
+target="_blank">
+Book via Facebook
+</a>
+
+tel:09544871568">
+Call Now
+</a>
+
+</div>
+
+</section>
+
+<section class="offer">
+
+🔥 Special Event Packages Available | AC Event Room | Capacity up to 150 Guests 🔥
+
+</section>
+
+<section class="about">
+
+<h2>Welcome to G' Jungle Cafe</h2>
+
+<p>
+
+Experience great food, memorable celebrations,
+birthday parties, family events and corporate gatherings
+in our unique jungle-inspired venue.
+
+</p>
+
+<div class="features">
+
+<div class="card">
+<h3>🎂 Birthday Parties</h3>
+<p>Celebrate unforgettable moments with family and friends.</p>
+</div>
+
+<div class="card">
+<h3>👨‍👩‍👧‍👦 Family Gatherings</h3>
+<p>Perfect venue for reunions and special occasions.</p>
+</div>
+
+<div class="card">
+<h3>🏢 Corporate Events</h3>
+<p>Professional event space with air-conditioned rooms.</p>
+</div>
+
+<div class="card">
+<h3>👥 150 Guest Capacity</h3>
+<p>Large seating area ideal for big celebrations.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>📍 Contact Us</h2>
+
+<p><strong>Address:</strong><br>
+Gurrea Street Brgy. 3 Pob,<br>
+La Carlota City, Negros Occidental
+</p>
+
+<p>📞 09544871568</p>
+
+<p>📧 gjunglecafe7@gmail.com</p>
+
+<p>
+💬 Facebook Booking:
+<a style="color:#d4af37"
+href="https://www.facebook.com/profile.php?id=100091445994719"
+target="_blank">
+Open Facebook
+</a>
+</p>
+
+</section>
+
+<footer>
+
+© 2026 G' Jungle Cafe | Experience Nature & Taste Together
+
+</footer>
+
+544871568"
+target="_blank">
+WhatsApp
+</a>
 
 </body>
 </html>
