@@ -6,257 +6,345 @@
 
 <title>G' Jungle Cafe</title>
 
+.com">
+<link href="https:leapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap
+
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Segoe UI, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-    background:#f8f9fa;
+font-family:Poppins,sans-serif;
+background:#faf9f5;
+color:#333;
 }
 
-header{
-    position:fixed;
-    width:100%;
-    background:rgba(0,0,0,0.6);
-    backdrop-filter:blur(8px);
-    z-index:1000;
-}
+/* NAVIGATION */
 
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:10px 50px;
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,.65);
+backdrop-filter:blur(8px);
+z-index:1000;
 }
 
-.logo{
-    display:flex;
-    align-items:center;
-    color:white;
+.nav-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
 }
 
-.logo img{
-    width:60px;
-    margin-right:10px;
+.logo-nav{
+display:flex;
+align-items:center;
 }
 
-.logo h2{
-    font-size:24px;
+.logo-nav img{
+height:55px;
+margin-right:10px;
 }
+
+.logo-nav h2{
+color:white;
+font-size:22px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+/* HERO */
 
 .hero{
-    height:100vh;
-    position:relative;
-    overflow:hidden;
+height:100vh;
+position:relative;
+overflow:hidden;
 }
 
-.slides{
-    height:100%;
-    width:100%;
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
+opacity:0;
+animation:slider 15s infinite;
 }
 
-.slides img{
-    position:absolute;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    animation:fade 16s infinite;
+.slide1{
+background-image:url('images/Photo_Gallery/Photo_Gallery_06.JPG');
+animation-delay:0s;
 }
 
-.slides img:nth-child(1){animation-delay:0s;}
-.slides img:nth-child(2){animation-delay:4s;}
-.slides img:nth-child(3){animation-delay:8s;}
-.slides img:nth-child(4){animation-delay:12s;}
+.slide2{
+background-image:url('images/Photo_Gallery/Photo_Gallery_07.JPG');
+animation-delay:5s;
+}
 
-@keyframes fade{
-    0%{opacity:0;}
-    8%{opacity:1;}
-    25%{opacity:1;}
-    33%{opacity:0;}
-    100%{opacity:0;}
+.slide3{
+background-image:url('images/Video_Gallery/Video_Gallery_01.JPG');
+animation-delay:10s;
+}
+
+@keyframes slider{
+0%{opacity:0;}
+10%{opacity:1;}
+30%{opacity:1;}
+40%{opacity:0;}
+100%{opacity:0;}
 }
 
 .overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.55);
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.55);
 }
 
 .hero-content{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    text-align:center;
-    color:white;
-    z-index:2;
-    width:90%;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+color:white;
+width:90%;
+z-index:5;
+}
+
+.hero-content img{
+width:180px;
+margin-bottom:20px;
 }
 
 .hero-content h1{
-    font-size:4rem;
-    margin-bottom:15px;
+font-family:'Playfair Display',serif;
+font-size:4rem;
 }
 
 .hero-content p{
-    font-size:1.3rem;
-    margin-bottom:30px;
+font-size:1.2rem;
+margin-top:15px;
+margin-bottom:30px;
 }
 
 .btn{
-    display:inline-block;
-    padding:15px 30px;
-    margin:10px;
-    text-decoration:none;
-    border-radius:8px;
-    color:white;
-    font-weight:bold;
+display:inline-block;
+padding:14px 28px;
+margin:8px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
 }
 
-.facebook{
-    background:#1877f2;
+.btn-fb{
+background:#1877f2;
+color:white;
 }
 
-.call{
-    background:#2d6a4f;
+.btn-call{
+background:#2d6a4f;
+color:white;
 }
 
-section{
-    padding:80px 30px;
-}
+/* OFFER */
 
 .offer{
-    background:#d4af37;
-    color:black;
-    text-align:center;
-    font-weight:bold;
-    font-size:22px;
+background:#d4af37;
+padding:15px;
+text-align:center;
+font-weight:bold;
+font-size:20px;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+font-family:'Playfair Display',serif;
+color:#1b4332;
+margin-bottom:40px;
 }
 
 .about{
-    text-align:center;
-    max-width:1000px;
-    margin:auto;
+text-align:center;
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
 }
 
-.about h2{
-    color:#1b4332;
-    margin-bottom:20px;
-}
+/* CARDS */
 
-.features{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-    margin-top:40px;
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
 }
 
 .card{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+text-align:center;
 }
 
 .card h3{
-    color:#1b4332;
-    margin-bottom:10px;
+margin-bottom:10px;
+color:#1b4332;
 }
 
+/* IMAGE GRID */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+/* CONTACT */
+
 .contact{
-    background:#1b4332;
-    color:white;
+background:#1b4332;
+color:white;
+text-align:center;
 }
 
 .contact h2{
-    margin-bottom:20px;
+color:white;
+margin-bottom:20px;
 }
 
 .contact p{
-    margin:10px 0;
+margin:10px 0;
+font-size:18px;
 }
+
+/* FOOTER */
 
 footer{
-    background:black;
-    color:white;
-    text-align:center;
-    padding:15px;
+background:black;
+color:white;
+text-align:center;
+padding:20px;
 }
 
+/* WHATSAPP */
+
 .whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    padding:15px 20px;
-    border-radius:50px;
-    font-weight:bold;
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+z-index:999;
 }
+
+/* MOBILE */
 
 @media(max-width:768px){
 
 .hero-content h1{
-    font-size:2.3rem;
+font-size:2.5rem;
 }
 
-.hero-content p{
-    font-size:1rem;
+nav ul{
+display:none;
 }
 
-nav{
-    padding:10px 20px;
 }
-}
-
 </style>
 </head>
-
 <body>
 
-<header>
 <nav>
+<div class="nav-container">
 
-<div class="logo">
-">
+<div class="logo-nav">
+images/logo/logo.png
 <h2>G' Jungle Cafe</h2>
 </div>
 
-</nav>
-</header>
+<ul>
+<li>#about</li>
+<li>#services</li>
+<li>#gallery</li>
+<li>#contact</li>
+</ul>
 
+</div>
+</nav>
 
 <section class="hero">
 
-<div class="slides">
-.jpg">
-hero2.jpg
-hero3.jpg
-4.jpg">
-</div>
+<div class="slide slide1"></div>
+<div class="slide slide2"></div>
+<div class="slide slide3"></div>
 
 <div class="overlay"></div>
 
 <div class="hero-content">
 
-<h1>🌿 G' JUNGLE CAFE</h1>
+images/logo/logo.png
+
+<h1>G' Jungle Cafe</h1>
 
 <p>
 Unlimited Samgyeopsal • Birthday Parties • Family Gatherings • Corporate Events
 </p>
 
-=100091445994719"
+<a class="btn btn-fb"
+href="https://www.facebook.com/profile.php?id=100091445994719"
 target="_blank">
-Book via Facebook
+Book Via Facebook
 </a>
 
-tel:09544871568">
+tel:09544871568
 Call Now
 </a>
 
@@ -264,84 +352,43 @@ Call Now
 
 </section>
 
-<section class="offer">
+<div class="offer">
+🔥 AC Event Hall • Capacity up to 150 Guests • Family Events • Corporate Gatherings 🔥
+</div>
 
-🔥 Special Event Packages Available | AC Event Room | Capacity up to 150 Guests 🔥
+<section id="about">
+
+<h2 class="section-title">Welcome to G' Jungle Cafe</h2>
+
+<div class="about">
+Experience nature, delicious food, unforgettable birthday celebrations,
+family gatherings and corporate events in a unique tropical setting.
+Our spacious venue and fully air-conditioned event hall can comfortably
+host up to 150 guests.
+</div>
 
 </section>
 
-<section class="about">
+<section id="services">
 
-<h2>Welcome to G' Jungle Cafe</h2>
+<h2 class="section-title">Our Events</h2>
 
-<p>
-
-Experience great food, memorable celebrations,
-birthday parties, family events and corporate gatherings
-in our unique jungle-inspired venue.
-
-</p>
-
-<div class="features">
+<div class="cards">
 
 <div class="card">
 <h3>🎂 Birthday Parties</h3>
-<p>Celebrate unforgettable moments with family and friends.</p>
+<p>Create unforgettable memories with your loved ones.</p>
 </div>
 
 <div class="card">
-<h3>👨‍👩‍👧‍👦 Family Gatherings</h3>
-<p>Perfect venue for reunions and special occasions.</p>
+<h3>👨‍👩‍👧 Family Gatherings</h3>
+<p>The ideal place for reunions and family celebrations.</p>
 </div>
 
 <div class="card">
 <h3>🏢 Corporate Events</h3>
-<p>Professional event space with air-conditioned rooms.</p>
+<p>Professional event hosting in a relaxed atmosphere.</p>
 </div>
 
 <div class="card">
-<h3>👥 150 Guest Capacity</h3>
-<p>Large seating area ideal for big celebrations.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="contact">
-
-<h2>📍 Contact Us</h2>
-
-<p><strong>Address:</strong><br>
-Gurrea Street Brgy. 3 Pob,<br>
-La Carlota City, Negros Occidental
-</p>
-
-<p>📞 09544871568</p>
-
-<p>📧 gjunglecafe7@gmail.com</p>
-
-<p>
-💬 Facebook Booking:
-<a style="color:#d4af37"
-href="https://www.facebook.com/profile.php?id=100091445994719"
-target="_blank">
-Open Facebook
-</a>
-</p>
-
-</section>
-
-<footer>
-
-© 2026 G' Jungle Cafe | Experience Nature & Taste Together
-
-</footer>
-
-544871568"
-target="_blank">
-WhatsApp
-</a>
-
-</body>
-</html>
+<h3>❄ AC Event Hall
