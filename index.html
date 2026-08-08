@@ -1,330 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>G' Jungle Cafe</title>
 
-.com">
-<link href="https:leapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
+style.css
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:Poppins,sans-serif;
-background:#faf9f5;
-color:#333;
-}
-
-/* NAVIGATION */
-
-nav{
-position:fixed;
-top:0;
-width:100%;
-background:rgba(0,0,0,.65);
-backdrop-filter:blur(8px);
-z-index:1000;
-}
-
-.nav-container{
-max-width:1200px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 20px;
-}
-
-.logo-nav{
-display:flex;
-align-items:center;
-}
-
-.logo-nav img{
-height:55px;
-margin-right:10px;
-}
-
-.logo-nav h2{
-color:white;
-font-size:22px;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:25px;
-}
-
-nav ul a{
-color:white;
-text-decoration:none;
-font-weight:500;
-}
-
-/* HERO */
-
-.hero{
-height:100vh;
-position:relative;
-overflow:hidden;
-}
-
-.slide{
-position:absolute;
-width:100%;
-height:100%;
-background-size:cover;
-background-position:center;
-opacity:0;
-animation:slider 15s infinite;
-}
-
-.slide1{
-background-image:url('images/Photo_Gallery/Photo_Gallery_06.JPG');
-animation-delay:0s;
-}
-
-.slide2{
-background-image:url('images/Photo_Gallery/Photo_Gallery_07.JPG');
-animation-delay:5s;
-}
-
-.slide3{
-background-image:url('images/Video_Gallery/Video_Gallery_01.JPG');
-animation-delay:10s;
-}
-
-@keyframes slider{
-0%{opacity:0;}
-10%{opacity:1;}
-30%{opacity:1;}
-40%{opacity:0;}
-100%{opacity:0;}
-}
-
-.overlay{
-position:absolute;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.55);
-}
-
-.hero-content{
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-text-align:center;
-color:white;
-width:90%;
-z-index:5;
-}
-
-.hero-content img{
-width:180px;
-margin-bottom:20px;
-}
-
-.hero-content h1{
-font-family:'Playfair Display',serif;
-font-size:4rem;
-}
-
-.hero-content p{
-font-size:1.2rem;
-margin-top:15px;
-margin-bottom:30px;
-}
-
-.btn{
-display:inline-block;
-padding:14px 28px;
-margin:8px;
-border-radius:40px;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
-}
-
-.btn-fb{
-background:#1877f2;
-color:white;
-}
-
-.btn-call{
-background:#2d6a4f;
-color:white;
-}
-
-/* OFFER */
-
-.offer{
-background:#d4af37;
-padding:15px;
-text-align:center;
-font-weight:bold;
-font-size:20px;
-}
-
-/* SECTIONS */
-
-section{
-padding:80px 10%;
-}
-
-.section-title{
-text-align:center;
-font-size:42px;
-font-family:'Playfair Display',serif;
-color:#1b4332;
-margin-bottom:40px;
-}
-
-.about{
-text-align:center;
-max-width:900px;
-margin:auto;
-font-size:18px;
-line-height:1.8;
-}
-
-/* CARDS */
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:40px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 10px 20px rgba(0,0,0,.08);
-text-align:center;
-}
-
-.card h3{
-margin-bottom:10px;
-color:#1b4332;
-}
-
-/* IMAGE GRID */
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.gallery img{
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:15px;
-transition:.3s;
-}
-
-.gallery img:hover{
-transform:scale(1.03);
-}
-
-/* CONTACT */
-
-.contact{
-background:#1b4332;
-color:white;
-text-align:center;
-}
-
-.contact h2{
-color:white;
-margin-bottom:20px;
-}
-
-.contact p{
-margin:10px 0;
-font-size:18px;
-}
-
-/* FOOTER */
-
-footer{
-background:black;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-font-weight:bold;
-text-decoration:none;
-z-index:999;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.hero-content h1{
-font-size:2.5rem;
-}
-
-nav ul{
-display:none;
-}
-
-}
-</style>
 </head>
 <body>
 
-<nav>
-<div class="nav-container">
+<header>
 
-<div class="logo-nav">
-images/logo/logo.png
+<div class="navbar">
+
+<div class="logo">
+images/logo/logo.png">
 <h2>G' Jungle Cafe</h2>
 </div>
 
 <ul>
-<li>#about</li>
-<li>#services</li>
-<li>#gallery</li>
-<li>#contact</li>
+<li><a href="index.html">HOME</a></li>
+<li>about.html">ABOUT</a></li>
+<li>events.htmlEVENTS</a></li>
+<li>gallery.html</li>
+<li>menu.html</li>
+<li>">CONTACT</a></li>
 </ul>
 
 </div>
-</nav>
+
+</header>
 
 <section class="hero">
 
-<div class="slide slide1"></div>
-<div class="slide slide2"></div>
-<div class="slide slide3"></div>
+<div class="hero-slide slide1"></div>
+<div class="hero-slide slide2"></div>
+<div class="hero-slide slide3"></div>
 
 <div class="overlay"></div>
 
@@ -338,10 +52,9 @@ images/logo/logo.png
 Unlimited Samgyeopsal • Birthday Parties • Family Gatherings • Corporate Events
 </p>
 
-<a class="btn btn-fb"
-href="https://www.facebook.com/profile.php?id=100091445994719"
+/profile.php?id=100091445994719"
 target="_blank">
-Book Via Facebook
+Book via Facebook
 </a>
 
 tel:09544871568
@@ -352,43 +65,65 @@ Call Now
 
 </section>
 
-<div class="offer">
-🔥 AC Event Hall • Capacity up to 150 Guests • Family Events • Corporate Gatherings 🔥
-</div>
+<section>
 
-<section id="about">
+<h2 class="section-title">
+Welcome to G' Jungle Cafe
+</h2>
 
-<h2 class="section-title">Welcome to G' Jungle Cafe</h2>
-
-<div class="about">
-Experience nature, delicious food, unforgettable birthday celebrations,
-family gatherings and corporate events in a unique tropical setting.
-Our spacious venue and fully air-conditioned event hall can comfortably
-host up to 150 guests.
-</div>
-
-</section>
-
-<section id="services">
-
-<h2 class="section-title">Our Events</h2>
-
-<div class="cards">
+<div class="grid">
 
 <div class="card">
 <h3>🎂 Birthday Parties</h3>
-<p>Create unforgettable memories with your loved ones.</p>
+<p>Celebrate unforgettable moments with family and friends.</p>
 </div>
 
 <div class="card">
 <h3>👨‍👩‍👧 Family Gatherings</h3>
-<p>The ideal place for reunions and family celebrations.</p>
+<p>Perfect venue for reunions and celebrations.</p>
 </div>
 
 <div class="card">
 <h3>🏢 Corporate Events</h3>
-<p>Professional event hosting in a relaxed atmosphere.</p>
+<p>Professional events in a unique jungle atmosphere.</p>
 </div>
 
 <div class="card">
-<h3>❄ AC Event Hall
+<h3>❄ AC Event Hall</h3>
+<p>Comfortable indoor venue with seating up to 150 guests.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Featured Photos</h2>
+
+<div class="gallery">
+
+ront_01.JPG">
+
+images/Event_Hall/Event_Hall_01.JPG
+
+images/Event_Gallery/Event_Gallery_01.JPG
+
+oto/Food_Photo_01.JPG">
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 G' Jungle Cafe
+
+</footer>
+
+https://wa.me/639544871568
+WhatsApp
+</a>
+
+</body>
+</html>
