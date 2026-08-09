@@ -16,8 +16,8 @@ body{
 }
 
 header{
-    background:#1b4332;
-    padding:15px 0;
+    background:#ffffff;
+    border-bottom:1px solid #e5e5e5;
 }
 
 .nav{
@@ -37,9 +37,7 @@ header{
 }
 
 .brand span{
-    color:white;
-    font-size:24px;
-    font-weight:bold;
+    color:#222;
 }
 
 nav ul{
@@ -52,16 +50,12 @@ nav ul li{
 }
 
 nav ul li a{
-    color:white;
-    text-decoration:none;
+    color:#222;
 }
 
 .hero{
-    background-image:url('images/Photo_Gallery/Photo_Gallery_06.JPG');
-    background-size:cover;
-    background-position:center;
-    height:80vh;
-    position:relative;
+    background:#ffffff;
+    padding:120px 0 60px;
 }
 
 .hero-overlay{
