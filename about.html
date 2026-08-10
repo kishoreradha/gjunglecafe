@@ -1,10 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>About</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | G' Jungle Cafe</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+    .about-page{
+        background:#ffffff;
+        padding:80px 10%;
+    }
+
+    .about-row{
+        display:flex;
+        align-items:center;
+        gap:50px;
+        margin-bottom:60px;
+    }
+
+    .about-image{
+        flex:1;
+    }
+
+    .about-image img{
+        width:100%;
+        border-radius:15px;
+        box-shadow:0 10px 25px rgba(0,0,0,0.10);
+    }
+
+    .about-text{
+        flex:1;
+    }
+
+    .about-text h1{
+        font-size:42px;
+        margin-bottom:20px;
+        color:#222;
+    }
+
+    .about-text p{
+        margin-bottom:18px;
+        line-height:1.8;
+        color:#555;
+        font-size:17px;
+    }
+
+    .highlight-boxes{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:20px;
+        margin-top:30px;
+    }
+
+    .highlight{
+        background:#f8f8f8;
+        padding:25px;
+        border-radius:10px;
+        text-align:center;
+        box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .highlight h3{
+        margin-bottom:10px;
+    }
+
+    .why-choose{
+        padding-top:30px;
+    }
+
+    .why-choose h2{
+        text-align:center;
+        margin-bottom:25px;
+        font-size:36px;
+    }
+
+    .why-choose p{
+        text-align:center;
+        line-height:1.8;
+        max-width:900px;
+        margin:auto;
+        color:#555;
+    }
+
+    @media(max-width:900px){
+
+        .about-row{
+            flex-direction:column;
+        }
+
+        .about-text h1{
+            font-size:32px;
+        }
+    }
+
+    </style>
+
 </head>
+
 <body>
-<h1>About</h1>
-<p>Coming Soon</p>
+
+<header>
+    <div class="container nav">
+
+        <div class="brand">
+            images/logo/logo.png
+            <span>G' Jungle Cafe</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>events.html</li>
+                <li>gallery.html</li>
+                <li>menu.html</li>
+                <li><a href="contact.html">Contact</ul>
+        </nav>
+
+    </div>
+</header>
+
+<section class="about-page">
+
+    <div class="about-row">
+
+        <div class="about-image">
+
+            <img src="IMAGE_PATH_HERE"
+                 alt="About G Jungle">
+
+            <h1>About G' Jungle Cafe</h1>
+
+            <p>
+                Welcome to G' Jungle Cafe, a unique dining and event destination
+                located in the heart of La Carlota City, Negros Occidental.
+            </p>
+
+            <p>
+                We are passionate about bringing people together through great food,
+                memorable celebrations, and exceptional hospitality. Whether you are
+                visiting for our Unlimited Samgyeopsal experience, a family gathering,
+                a birthday celebration, or a corporate event, our goal is to make every
+                occasion special and unforgettable.
+            </p>
+
+            <p>
+                Our spacious venue provides a relaxing atmosphere where friends,
+                families, and colleagues can enjoy quality time together while creating
+                lasting memories.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="highlight-boxes">
+
+        <div class="highlight">
+            <h3>🍽 Unlimited Samgyeopsal</h3>
+            <p>Delicious food enjoyed with friends and family.</p>
+        </div>
+
+        <div class="highlight">
+            <h3>🎉 Event Celebrations</h3>
+            <p>Perfect for birthdays, reunions and special occasions.</p>
+        </div>
+
+        <div class="highlight">
+            <h3>❄ Air Conditioned Hall</h3>
+            <p>Comfortable venue suitable for every type of gathering.</p>
+        </div>
+
+        <div class="highlight">
+            <h3>👥 Up To 150 Guests</h3>
+            <p>Spacious seating for family events and corporate functions.</p>
+        </div>
+
+    </div>
+
+    <div class="why-choose">
+
+        <h2>Why Choose G' Jungle Cafe?</h2>
+
+        <p>
+            At G' Jungle Cafe, we believe every celebration deserves a special place.
+            Our combination of quality food, warm hospitality, comfortable event
+            facilities, and convenient location makes us one of the preferred dining
+            and event destinations in La Carlota City. We are committed to creating
+            meaningful experiences that guests will remember and cherish for years
+            to come.
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© G' Jungle Cafe</p>
+</footer>
+
 </body>
 </html>
