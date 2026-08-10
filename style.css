@@ -190,6 +190,12 @@ footer{
     background-image:url('images/Video_Gallery/Video_Gallery_01.JPG');
     animation-delay:6s;
 }
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
 
 @keyframes slider{
 
