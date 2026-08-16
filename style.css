@@ -254,3 +254,64 @@ footer{
     }
 
 }
+
+.booking-section{
+    max-width:800px;
+    margin:50px auto;
+    padding:40px;
+    background:#ffffff;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.10);
+}
+
+.booking-section h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.booking-section p{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.booking-form{
+    display:flex;
+    flex-direction:column;
+}
+
+.booking-form label{
+    font-weight:bold;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.booking-form textarea{
+    min-height:120px;
+}
+
+.whatsapp-btn{
+    margin-top:25px;
+    background:#25D366;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.whatsapp-btn:hover{
+    background:#1ea952;
+}
+
