@@ -30,3 +30,55 @@
 <button onclick="sendWhatsApp()">
     Send via WhatsApp
 </button>
+
+<script>
+
+function sendWhatsApp(){
+
+    let name =
+        document.getElementById("name").value;
+
+    let phone =
+        document.getElementById("phone").value;
+
+    let email =
+        document.getElementById("email").value;
+
+    let eventType =
+        document.getElementById("eventType").value;
+
+    let eventDate =
+        document.getElementById("eventDate").value;
+
+    let guests =
+        document.getElementById("guests").value;
+
+    let remarks =
+        document.getElementById("remarks").value;
+
+    let message =
+`Hello G' Jungle Cafe,
+
+BOOKING REQUEST
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+
+Event Type: ${eventType}
+Event Date: ${eventDate}
+Guests: ${guests}
+
+Remarks:
+${remarks}`;
+
+    let url =
+"https://wa.me/639544871568?text=" +
+encodeURIComponent(message);
+
+    window.open(url, "_blank");
+}
+
+</script>
+
+
