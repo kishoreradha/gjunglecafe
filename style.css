@@ -325,7 +325,7 @@ footer{
     border-radius:10px;
     font-size:18px;
     cursor:pointer;
-    width:100%;
+    width:50%;
 }
 
 .email-btn:hover{
