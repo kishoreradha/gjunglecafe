@@ -72,19 +72,23 @@ nav ul li a{
     color:white;
     font-size:20px;
     text-shadow:1px 1px 6px rgba(0,0,0,0.7);
-    position:absolute;
-    z-index:10;
 }
 .hero-content h1{
     font-size:50px;
     margin:20px 0;
     color:white;
     text-shadow:2px 2px 8px rgba(0,0,0,0.7);
-    position:absolute;
-    z-index:10;
 }
 
-
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:90%;
+    text-align:center;
+    z-index:10;
+}
 .hero-logo{
     width:180px;
 }
