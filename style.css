@@ -344,6 +344,18 @@ footer{
     cursor:pointer;
 }
 
+.button-row{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.whatsapp-btn,
+.email-btn,
+.messenger-btn{
+    flex:1;
+}
+
 .messenger-btn:hover{
     background:#006fe6;
 }
