@@ -1,35 +1,53 @@
-<form id="bookingForm">
+<section class="booking-section">
 
-    <label>Name</label>
-    <input type="text" id="name" required>
+    <h1>Book Your Event</h1>
 
-    <label>Phone</label>
-    <input type="text" id="phone" required>
+    <p>
+        Birthday Parties, Family Gatherings,
+        Corporate Events and Special Occasions
+    </p>
 
-    <label>Email</label>
-    <input type="email" id="email">
+    <form class="booking-form">
 
-    <label>Event Type</label>
-    <select id="eventType">
-        <option>Birthday Party</option>
-        <option>Family Gathering</option>
-        <option>Corporate Event</option>
-        <option>Private Function</option>
-    </select>
+        <label>Name</label>
+        <input type="text" id="name">
 
-    <label>Event Date</label>
-    <input type="date" id="eventDate">
+        <label>Phone</label>
+        <input type="text" id="phone">
 
-    <label>Guests</label>
-    <input type="number" id="guests">
+        <label>Email</label>
+        <input type="email" id="email">
 
-    <label>Special Requests</label>
-    <textarea id="remarks"></textarea>
+        <label>Event Type</label>
+        <select id="eventType">
+            <option>Birthday Party</option>
+            <option>Family Gathering</option>
+            <option>Corporate Event</option>
+            <option>Karaoke Room Reservation</option>
+            <option>Private Function</option>
+        </select>
 
-</form>
-<button onclick="sendWhatsApp()">
-    Send via WhatsApp
-</button>
+        <label>Event Date</label>
+        <input type="date" id="eventDate">
+
+        <label>Number of Guests</label>
+        <input type="number" id="guests">
+
+        <label>Special Requests</label>
+        <textarea id="remarks"></textarea>
+
+    </form>
+
+    <button class="whatsapp-btn" onclick="sendWhatsApp()">
+        Send via WhatsApp
+    </button>
+
+</section>
+
+
+
+
+
 
 <script>
 
