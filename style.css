@@ -315,3 +315,19 @@ footer{
     background:#1ea952;
 }
 
+
+.email-btn{
+    margin-top:10px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    width:100%;
+}
+
+.email-btn:hover{
+    background:#1d4ed8;
+}
