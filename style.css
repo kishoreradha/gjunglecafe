@@ -301,7 +301,7 @@ footer{
 }
 
 .whatsapp-btn{
-    margin-top:0;
+    margin-top:5;
     background:#25D366;
     color:white;
     border:none;
@@ -354,7 +354,7 @@ footer{
 .whatsapp-btn,
 .email-btn,
 .messenger-btn{
-    margin-top:0;
+    margin-top:5;
     width:220px;
     height:55px;
 
