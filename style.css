@@ -427,4 +427,17 @@ footer{
     }
 }
 
+.page-title{
+    text-align:center;
+    padding:60px 0 40px;
+}
 
+.page-title h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.page-title p{
+    color:#666;
+    font-size:18px;
+}
