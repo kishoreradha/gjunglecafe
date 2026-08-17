@@ -348,12 +348,14 @@ footer{
     display:flex;
     gap:10px;
     margin-top:20px;
+    justify-content:center;
 }
 
 .whatsapp-btn,
 .email-btn,
 .messenger-btn{
-    flex:1;
+    width:220px;
+    height:55px;
 }
 
 .messenger-btn:hover{
