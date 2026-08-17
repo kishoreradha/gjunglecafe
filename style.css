@@ -581,3 +581,54 @@ footer{
 .gallery-card{
     cursor:pointer;
 }
+
+.gallery-detail-page{
+    padding:40px;
+}
+
+.detail-row{
+    display:flex;
+    gap:60px;
+    align-items:center;
+}
+
+.detail-image{
+    flex:1;
+}
+
+.detail-image img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.detail-text{
+    flex:1;
+}
+
+.detail-text h2{
+    font-size:36px;
+    margin-bottom:25px;
+    color:#222;
+}
+
+.detail-text h3{
+    margin-top:25px;
+    margin-bottom:10px;
+}
+
+.detail-text p{
+    line-height:1.8;
+    color:#555;
+}
+
+.small-book-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 18px;
+    background:#d4af37;
+    color:black;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
