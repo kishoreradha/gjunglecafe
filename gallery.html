@@ -38,9 +38,10 @@
 
         <div class="gallery-card"
                     onclick="openGallery(
-                    document.getElementById('birthdayImage').src
+                    './images/Photo_Gallery/Photo_Gallery_01.JPG',
                     'Birthday Parties',
-                    'Birthday celebrations, family gatherings and special events held at G Jungle Cafe.')">
+                    'Birthday celebrations, family gatherings and special events held at G Jungle Cafe.'
+                    )">       
             
             <div class="gallery-image">
                 <span class="gallery-label">
@@ -221,7 +222,8 @@
             <script>
             
                 function openGallery(image,title,description){
-                
+
+                    alert("Gallery Click Working 01");
                     localStorage.setItem(
                         "galleryImage",
                         image
@@ -252,6 +254,8 @@
 <script>
 
 function openGallery(img,title,desc,feedback){
+
+    alert("Gallery Click Working 02");
 
     localStorage.setItem("galleryImage",img);
     localStorage.setItem("galleryTitle",title);
