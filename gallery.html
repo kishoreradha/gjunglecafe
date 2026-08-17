@@ -145,80 +145,103 @@
 
 </footer>
 
-<script>
-
-        const birthdayImages = [
-            "./images/Photo_Gallery/Photo_Gallery_01.JPG",
-            "./images/Photo_Gallery/Photo_Gallery_02.JPG",
-            "./images/Photo_Gallery/Photo_Gallery_03.JPG"
-        ];
-        
-        const corporateImages = [
-            "./images/Photo_Gallery/Photo_Gallery_04.JPG",
-            "./images/Photo_Gallery/Photo_Gallery_05.JPG",
-            "./images/Photo_Gallery/Photo_Gallery_06.JPG"
-        ];
-        
-        const karaokeImages = [
-            "./images/Photo_Gallery/Photo_Gallery_07.JPG",
-            "./images/Photo_Gallery/Photo_Gallery_08.JPG",
-            "./images/Photo_Gallery/Photo_Gallery_09.JPG"
-        ];
-        
-        const boardingImages = [
-            "./images/Photo_Gallery/Photo_Gallery_10.JPG",
-            "./images/Photo_Gallery/Photo_Gallery_11.JPG",
-            "./images/Photo_Gallery/Photo_Gallery_12.JPG"
-        ];
-        
-        let birthdayIndex = 0;
-        let corporateIndex = 0;
-        let karaokeIndex = 0;
-        let boardingIndex = 0;
-        
-        setInterval(function(){
-        
-            birthdayIndex =
-                (birthdayIndex + 1) % birthdayImages.length;
-        
-            document.getElementById("birthdayImage").src =
-                birthdayImages[birthdayIndex];
-        
-        },3000);
-        
-        setInterval(function(){
-        
-            corporateIndex =
-                (corporateIndex + 1) % corporateImages.length;
-        
-            document.getElementById("corporateImage").src =
-                corporateImages[corporateIndex];
-        
-        },3000);
-        
-        setInterval(function(){
-        
-            karaokeIndex =
-                (karaokeIndex + 1) % karaokeImages.length;
-        
-            document.getElementById("karaokeImage").src =
-                karaokeImages[karaokeIndex];
-        
-        },3000);
-        
-        setInterval(function(){
-        
-            boardingIndex =
-                (boardingIndex + 1) % boardingImages.length;
-        
-            document.getElementById("boardingImage").src =
-                boardingImages[boardingIndex];
-        
-        },3000);
-        
-</script>
-
-
+            <script>
+            
+                    const birthdayImages = [
+                        "./images/Photo_Gallery/Photo_Gallery_01.JPG",
+                        "./images/Photo_Gallery/Photo_Gallery_02.JPG",
+                        "./images/Photo_Gallery/Photo_Gallery_03.JPG"
+                    ];
+                    
+                    const corporateImages = [
+                        "./images/Photo_Gallery/Photo_Gallery_04.JPG",
+                        "./images/Photo_Gallery/Photo_Gallery_05.JPG",
+                        "./images/Photo_Gallery/Photo_Gallery_06.JPG"
+                    ];
+                    
+                    const karaokeImages = [
+                        "./images/Photo_Gallery/Photo_Gallery_07.JPG",
+                        "./images/Photo_Gallery/Photo_Gallery_08.JPG",
+                        "./images/Dining_Area/Dining_Area_03.JPG"
+                    ];
+                    
+                    const boardingImages = [
+                        "./images/Dining_Area/Dining_Area_04.JPG",
+                        "./images/Dining_Area/Dining_Area_05.JPG",
+                        "./images/Dining_Area/Dining_Area_06.JPG""
+                    ];
+                    
+                    let birthdayIndex = 0;
+                    let corporateIndex = 0;
+                    let karaokeIndex = 0;
+                    let boardingIndex = 0;
+                    
+                    setInterval(function(){
+                    
+                        birthdayIndex =
+                            (birthdayIndex + 1) % birthdayImages.length;
+                    
+                        document.getElementById("birthdayImage").src =
+                            birthdayImages[birthdayIndex];
+                    
+                    },3000);
+                    
+                    setInterval(function(){
+                    
+                        corporateIndex =
+                            (corporateIndex + 1) % corporateImages.length;
+                    
+                        document.getElementById("corporateImage").src =
+                            corporateImages[corporateIndex];
+                    
+                    },3000);
+                    
+                    setInterval(function(){
+                    
+                        karaokeIndex =
+                            (karaokeIndex + 1) % karaokeImages.length;
+                    
+                        document.getElementById("karaokeImage").src =
+                            karaokeImages[karaokeIndex];
+                    
+                    },3000);
+                    
+                    setInterval(function(){
+                    
+                        boardingIndex =
+                            (boardingIndex + 1) % boardingImages.length;
+                    
+                        document.getElementById("boardingImage").src =
+                            boardingImages[boardingIndex];
+                    
+                    },3000);
+                    
+            </script>
+            
+            <script>
+            
+                function openGallery(image,title,description){
+                
+                    localStorage.setItem(
+                        "galleryImage",
+                        image
+                    );
+                
+                    localStorage.setItem(
+                        "galleryTitle",
+                        title
+                    );
+                
+                    localStorage.setItem(
+                        "galleryDescription",
+                        description
+                    );
+                
+                    window.location.href =
+                        "gallery-details.html";
+                }
+            
+            </script>
     
 </body>
 </html>
