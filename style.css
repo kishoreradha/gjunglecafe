@@ -354,8 +354,20 @@ footer{
 .whatsapp-btn,
 .email-btn,
 .messenger-btn{
-    width:250px;
+    width:220px;
     height:55px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:none;
+    border-radius:10px;
+
+    font-size:16px;
+    font-weight:bold;
+
+    cursor:pointer;
 }
 
 .messenger-btn:hover{
