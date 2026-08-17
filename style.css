@@ -359,3 +359,72 @@ footer{
 .messenger-btn:hover{
     background:#006fe6;
 }
+
+
+/* =======================
+   EVENTS PAGE
+======================= */
+
+.events-page{
+    padding:60px 8%;
+    background:#ffffff;
+}
+
+.event-row{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    margin-bottom:80px;
+}
+
+.event-row.reverse{
+    flex-direction:row-reverse;
+}
+
+.event-image{
+    flex:1;
+}
+
+.event-image img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.event-text{
+    flex:1;
+}
+
+.event-text h2{
+    font-size:32px;
+    margin-bottom:20px;
+    color:#222;
+}
+
+.event-text p{
+    font-size:17px;
+    line-height:1.8;
+    color:#555;
+    margin-bottom:15px;
+    text-align:justify;
+}
+
+@media(max-width:768px){
+
+    .event-row,
+    .event-row.reverse{
+        flex-direction:column;
+    }
+
+    .event-image img{
+        height:250px;
+    }
+
+    .event-text h2{
+        font-size:26px;
+    }
+}
+
+
