@@ -1,10 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G' Jungle Cafe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<h1>Gallery</h1>
-<p>Coming Soon</p>
+
+
+<header>
+    <div class="container nav">
+        <div class="brand">
+            <Img src="./images/logo/logo.png">
+            <span>G' Jungle Cafe</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="events.html">events</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="contact.html">contact</a></li>                
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<div class="gallery-card"
+     onclick="openGallery(
+     'images/Photo_Gallery/Photo_Gallery_04.jpg',
+     'Birthday Celebration',
+     'This event was organized by...',
+     'Great experience and excellent food.')">
+
+    <div class="slider-one"></div>
+
+    <h3>Birthday Parties</h3>
+
+</div>
+
+
+  <div class="gallery-card"
+     onclick="openGallery(
+     'images/Photo_Gallery/Photo_Gallery_08.jpg',
+     'Corporate Event',
+     'Company annual gathering...',
+     'Excellent venue and service.')">
+
+    <div class="slider-two"></div>
+
+    <h3>Corporate Events</h3>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+  
+
+<section class="contact-preview">
+
+    <div class="container">
+
+        <h2>Visit Us</h2>
+
+        <p>
+            Gurrea Street Brgy. 3 Pob,
+            La Carlota City,
+            Negros Occidental
+        </p>
+
+        <p>
+            📞 09544871568
+        </p>
+
+        <p>
+            📧 gjunglecafe7@gmail.com
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © G' Jungle Cafe
+    </p>
+
+</footer>
+
 </body>
 </html>
+
+
+
+
+<script>
+
+function openGallery(img,title,desc,feedback){
+
+    localStorage.setItem("galleryImage",img);
+    localStorage.setItem("galleryTitle",title);
+    localStorage.setItem("galleryDesc",desc);
+    localStorage.setItem("galleryFeedback",feedback);
+
+    window.location.href="gallery_details.html";
+}
+
+</script>
