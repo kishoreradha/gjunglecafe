@@ -549,3 +549,32 @@ footer{
 
     z-index:10;
 }
+
+.detail-row{
+    display:flex;
+    gap:50px;
+    align-items:center;
+    padding:50px;
+}
+
+.detail-image{
+    flex:1;
+}
+
+.detail-image img{
+    width:100%;
+    border-radius:10px;
+}
+
+.detail-text{
+    flex:1;
+}
+
+.detail-text h2{
+    margin-bottom:20px;
+}
+
+.detail-text p{
+    line-height:1.8;
+    text-align:justify;
+}
