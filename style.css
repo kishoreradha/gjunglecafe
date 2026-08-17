@@ -160,10 +160,11 @@ nav ul li a{
 }
 
 .contact-preview{
-    background:#1b4332;
-    color:white;
+    background:#ffffff;
+    color:#333;
     text-align:center;
-    padding:5px 0;
+    padding:15px 0;
+    border-top:1px solid #ddd;
 }
 
 .contact-preview h2{
