@@ -527,3 +527,25 @@ footer{
 .gallery-page{
     padding:20px 50px;
 }
+
+.gallery-image{
+    position:relative;
+}
+
+.gallery-label{
+    position:absolute;
+    top:8px;
+    right:8px;
+
+    background:rgba(0,0,0,0.6);
+    color:white;
+
+    padding:3px 8px;
+
+    font-size:11px;
+    font-weight:bold;
+
+    border-radius:4px;
+
+    z-index:10;
+}
