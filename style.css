@@ -578,3 +578,6 @@ footer{
     line-height:1.8;
     text-align:justify;
 }
+.gallery-card{
+    cursor:pointer;
+}
