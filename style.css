@@ -633,3 +633,62 @@ footer{
     border-radius:6px;
     font-weight:bold;
 }
+
+
+/* =========================
+   MENU PAGE
+========================= */
+
+.menu-page{
+    padding:30px;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.menu-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.menu-card h3{
+    padding:15px;
+    margin:0;
+    color:#1b4332;
+}
+
+.menu-card img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    cursor:pointer;
+}
+
+.menu-card p{
+    padding:10px;
+    color:#666;
+    font-size:14px;
+}
+
+.menu-card:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+@media(max-width:768px){
+
+    .menu-grid{
+        grid-template-columns:1fr;
+    }
+
+    .menu-card img{
+        height:auto;
+    }
+
+}
