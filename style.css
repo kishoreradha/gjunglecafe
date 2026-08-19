@@ -752,3 +752,71 @@ footer{
     }
 
 }
+
+
+/* ======================
+   REVIEWS PAGE
+====================== */
+
+.reviews-page{
+    max-width:1100px;
+    margin:auto;
+    padding:20px 30px;
+}
+
+.overall-rating{
+    text-align:center;
+    margin:30px 0;
+}
+
+.overall-rating h2{
+    font-size:40px;
+}
+
+.overall-rating h3{
+    margin-top:10px;
+}
+
+.review-platform{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.review-btn{
+    display:inline-block;
+    background:#1877F2;
+    color:white;
+    padding:10px 20px;
+    border-radius:6px;
+    text-decoration:none;
+    margin:10px;
+}
+
+.review-btn:hover{
+    background:#145dbf;
+}
+
+.featured-reviews{
+    margin-top:40px;
+}
+
+.featured-reviews h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.review-card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.review-card p{
+    line-height:1.8;
+}
