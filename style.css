@@ -696,3 +696,52 @@ footer{
     }
 
 }
+
+/* ======================
+   CONTACT PAGE
+====================== */
+
+.contact-page{
+    padding:30px;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    margin-top:30px;
+}
+
+.contact-info{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-info p{
+    margin-bottom:20px;
+    line-height:1.8;
+}
+
+.contact-map iframe{
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.business-hours{
+    text-align:center;
+    margin-top:40px;
+}
+
+.business-hours h2{
+    margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+}
