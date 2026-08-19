@@ -707,7 +707,7 @@ footer{
 
 .contact-grid{
     display:grid;
-    grid-template-columns:45% 55%;
+    grid-template-columns:42% 58%;
     gap:40px;
     margin-top:30px;
 }
