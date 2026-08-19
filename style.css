@@ -820,3 +820,14 @@ footer{
 .review-card p{
     line-height:1.8;
 }
+
+.review-btn{
+    display:inline-block;
+    background:#2d6a4f;
+    color:white;
+    padding:10px 20px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
