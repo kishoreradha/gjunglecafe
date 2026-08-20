@@ -969,7 +969,7 @@ footer{
         text-align:center;
     }
     .detail-text h2{
-        font-size:42px;
+        font-size:30px;
         line-height:1.2;
         margin-bottom:20px;
     }
@@ -978,5 +978,40 @@ footer{
     margin-top:20px;
     margin-bottom:30px;
     }
-
+    .detail-text{
+        width:100%;
+        padding:0 15px;
+        text-align:center;
+    }
+    .detail-text p{
+    font-size:20px;
+    line-height:1.8;
+    }
+    .detail-row{
+        flex-direction:column;
+        gap:20px;
+    }
+    
+    .detail-image img{
+        width:100%;
+        max-width:320px;
+        display:block;
+        margin:auto;
+    }
+    
+    .detail-text{
+        width:100%;
+        padding:0 15px;
+        text-align:center;
+    }
+    
+    .detail-text h2{
+        font-size:30px;
+        line-height:1.2;
+        margin-bottom:20px;
+    }
+    
+    .detail-text p{
+        line-height:1.8;
+    }
 }
