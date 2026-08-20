@@ -831,3 +831,19 @@ footer{
     font-weight:bold;
 }
 
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media screen and (max-width:768px){
+
+    .gallery-grid,
+    .menu-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+img{
+        max-width:100%;
+        height:auto;
+    }
