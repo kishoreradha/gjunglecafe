@@ -830,6 +830,9 @@ footer{
     text-decoration:none;
     font-weight:bold;
 }
+.mobile-menu-icon{
+    display:none;
+}
 
 /* =====================================
    MOBILE RESPONSIVE
@@ -878,5 +881,29 @@ footer{
         flex-direction:column;
         text-align:center;
     }
+    .mobile-menu-icon{
+    display:block;
+    font-size:32px;
+    color:white;
+    cursor:pointer;
+    }
+    
+    nav{
+        display:none;
+        width:100%;
+    }
+    
+    nav.show-menu{
+        display:block;
+    }
+    
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+    nav{
+    display:none;
+}
 
 }
