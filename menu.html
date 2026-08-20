@@ -18,7 +18,12 @@
             <span>G' Jungle Cafe</span>
         </div>
 
-        <nav>
+        <div class="mobile-menu-icon"
+            onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <nav id="mobileNav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                
@@ -156,7 +161,18 @@
 </script>
 
 
+<script>
 
+    function toggleMenu(){
+    
+        const nav =
+            document.getElementById("mobileNav");
+    
+        nav.classList.toggle("show-menu");
+    
+    }
+
+</script>
     
 </body>
 </html>
