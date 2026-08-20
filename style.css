@@ -843,6 +843,20 @@ footer{
 
 @media screen and (max-width:768px){
 
+    .button-row{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
+    }
+    
+    .whatsapp-btn,
+    .email-btn,
+    .messenger-btn{
+        width:220px;
+    }
+
+
     .gallery-grid,
     .menu-grid,
     .contact-grid{
