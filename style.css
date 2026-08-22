@@ -37,7 +37,7 @@ header{
     height:60px;
     margin-right:10px;
     border-radius:50%;
-    border:2px solid #5b7b4a;
+    object-fit:cover; 
 }
 
 .brand span{
