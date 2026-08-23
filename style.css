@@ -851,6 +851,15 @@ footer{
     color:#333;
     font-size:22px;
 }
+.help-actions{
+    text-align:center;
+    margin-top:30px;
+}
+
+.help-actions .messenger-btn{
+    margin:10px auto 0;
+    display:block;
+}
 
 /* =====================================
    MOBILE RESPONSIVE
